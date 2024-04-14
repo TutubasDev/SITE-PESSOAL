@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+
+}
+
+
+body {
+    background-color: white; 
+    color: black;
+    margin: 0;
+    padding: 0;
+    transition: background 0.2s linear, color 0.2s linear;
+
+}
+
+body.dark {
+    background-color: #000000;
+    color: white
+
+}
+
+.checkbox {
+    opacity: 0;
+    margin-left: 25px ;
+    
+}
+
+.label {
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+
+    transform: scale(1.5);
+
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translate(0px);
+    transition: transform 0.2s linear;
+
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+
+}
+
+.fa-moon {
+    color: #f1c40f;
+
+}
+
+.fa-sun {
+    color: #f39c12;
+
+}
+
+.circle-container {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 28%;
+
+}
+
+.circle-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.informação-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px; 
+
+}
+
+.informação {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Platypi", serif;
+
+}
+
+.informação p {
+    margin: 0;
+
+}
+
+.informação2 {
+    color: #FFD700;
+    margin-top: 10px;
+
+}
+
+.links {
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    margin-left: 25%;
+
+}
+
+a {
+    color: white;
+    transition: 400ms;
+    font-size: 45px;
+
+}
+
+a:hover {
+    color: rgb(255, 7, 152);
+
+}
+
+h2 {
+    color: #FFD700;
+    font-family: "Platypi", serif;
+    align-items: center;
+    margin-bottom: 40px;
+
+
+}
+
+a.cesar {
+    color: darkorange;
+    font-size: 30px;
+
+}
+
+.textos {
+    color: white;
+    margin-top: 200px;
+    text-align: center;
+    font-family: "Platypi", serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+   
+}
+
+.texto1 {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    margin-bottom: 110px;
+    margin-top: 200px;
+
+}
+
+.texto2 {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 110px;
+    margin-top: 110px;
+    padding: 30px;
+
+}
+
+.texto3 {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    margin-top: 110px;
+    margin-bottom: 110px;
+    
+}
+
+.texto4 {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    margin-top: 110px;
+    margin-bottom: 110px;
+
+}
+
+.hobbies {
+    padding: 30px;
+    
+}
+
+.prog {
+    padding: 30px;
+       
+}
+
+.form {
+    padding: 30px;
+
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+    padding-left: 0px;
+
+}
+
+li {
+    margin-bottom: 60px;
+
+}
+
+.hobbies1 {
+    background-image: url("./hobbies1.png");
+    background-size: 47px 47px;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+
+}
+
+.hobbies2 {
+    background-image: url("./hobbies2.png");
+    background-size: 47px 47px;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+
+}
+
+.hobbies3 {
+    background-image: url("./hobbies3.png");
+    background-size: 47px 47px;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+
+}
+
+.hobbies4 {
+    background-image: url("./hobbies4.png");
+    background-size: 47px 47px;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+
+}
+
+.prog1 {
+    background-image: url("./prog1.png");
+    background-size: 47px 47px;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+
+
+}
+
+.prog2 {
+    background-image: url("./prog2.png");
+    background-size: 47px 47px;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+
+}
+
+.prog3 {
+    background-image: url("./prog3.png");
+    background-size: 47px 47px;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+
+}
+
+.form1 {
+    background-image: url("./form1.png");
+    background-size: 47px 47px;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+}
+
+.form2 {
+    background-image: url("./form2.png");
+    background-size: 47px 47px;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+
+}
+
+.form3 {
+    background-image: url("./form3.png");
+    background-size: 47px 47px;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+
+}
+
+.linha-horizontal {
+    border-top: 1px groove rgb(255, 255, 255); 
+    width: 22%; 
+    margin-left: 290px;
+    margin-bottom: 100px;
+    margin-top: -30px;
+    transition: border-top-color 0.2s linear;
+}
+
+body:not(.dark) .textos,
+body:not(.dark) .textos1,
+body:not(.dark) .textos2,
+body:not(.dark) .textos3,
+body:not(.dark) .textos4,
+body:not(.dark) .hobbies,
+body:not(.dark) .prog,
+body:not(.dark) .form,
+body:not(.dark) .ul,
+body:not(.dark) .li {
+    color: black
+
+}
+
+body:not(.dark) .linha-horizontal {
+    border-top-color: black;
+
+}
+
+body:not(.dark) .informação p {
+    color: black;
+
+}
+
+body.dark .linha-horizontal {
+    border-top-color: white;
+
+}
+
+body:not(.dark) .links a {
+    color: black;
+
+}
+
+body:not(.dark) .links a:hover {
+    color: rgb(255, 7, 152);
+
+}
+
+
+.botao {
+    display: flex;
+    justify-content: left;
+
+}
+
+.espaco-botao {
+    display: flex;
+    margin-top: 25px;
+
+}
